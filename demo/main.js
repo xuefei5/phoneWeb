@@ -52,6 +52,7 @@ import Test from './components/Test'
 
 //自定义组件
 import Main from './components/staticPage/Main';
+import HyIndex from './components/staticPage/hypermarket/Index';
 
 const routes = [
   { path: '/', component: Index },
@@ -108,6 +109,7 @@ const routes = [
 
   //自己的路由
   { path: '/staticPage/Main', component: Main },
+  { path:'/staticPage/hypermarket/Index',component:HyIndex}
 ]
 
 /**

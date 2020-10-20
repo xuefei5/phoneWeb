@@ -22,6 +22,13 @@
           <span class="item-note">首页-静态页面</span>
           <i class="icon ion-ios-arrow-right"></i>
         </hl-item>
+
+
+        <hl-item class="item-icon-left item-icon-right" @click.native="hypermarket()">
+          <i class="icon ion-ios-book positive"></i>
+          <span class="item-note">商城</span>
+          <i class="icon ion-ios-arrow-right"></i>
+        </hl-item>
       </div>
 
       <div class="vonic-stars">
@@ -88,6 +95,9 @@
 
       mainPage() {
         $router.forward({path:'/staticPage/Main'})
+      },
+      hypermarket() {
+        $router.forward({path:'/staticPage/hypermarket/Index'})
       }
     }
   }
